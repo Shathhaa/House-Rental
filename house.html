@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/afea27c44a.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li h2 {
+            margin: 0;
+            text-align: left;
+        }
+        
+        li p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <div class="logo">
+            <p style="color: black; font-weight: bold; font-size: 25px;">House Rental </p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"> Home</a></li>
+            <li><a href="listing.html" class="active"> Places</a></li>
+            <li><a href="house.html" class="active">Online Packages</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li> <a href="Group.html" class="active">Group</a></li>
+            <li> <a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+
+    </nav>
+    <div class="house-details" style="margin-top: 150px;">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+
+                <div>
+                    <p>Location: San Francisco, California, United States</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/house-1.png"></div>
+            <div><img src="images/house-2.png"></div>
+            <div><img src="images/house-3.png"></div>
+            <div><img src="images/house-4.png"></div>
+            <div><img src="images/house-5.png"></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>2 guest 2 beds 1 bathroom</p>
+            <h4>$ 100 / day</h4>
+        </div>
+        <hr class="line">
+
+        <h1 style="text-align: left;">Available Houses for Rent</h1>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <h2>House 1</h2>
+                    <p>This beautiful house features three bedrooms, two bathrooms, a spacious living room, and a fully equipped kitchen. It also has a backyard with a patio for outdoor activities. Located in a peaceful neighborhood, this house is perfect
+                        for a family. Rent: $1000/month.</p>
+                </li>
+                <li>
+                    <h2>House 2</h2>
+                    <p>Enjoy the modern amenities of this stylish house. It offers four bedrooms, three bathrooms, a contemporary kitchen with high-end appliances, and a cozy living area. The backyard includes a swimming pool and a BBQ area, ideal for entertaining
+                        guests. Rent: $1200/month.</p>
+                </li>
+                <li>
+                    <h2>House 3</h2>
+                    <p>This charming house boasts two bedrooms, one bathroom, a comfortable living space, and a well-appointed kitchen. It is located in a vibrant neighborhood close to restaurants, shops, and public transportation. Ideal for young professionals
+                        or couples. Rent: $1500/month.</p>
+                </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Features</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>House 1</td>
+                <td>3 bedrooms, 2 bathrooms</td>
+                <td>$2000/month</td>
+            </tr>
+            <tr>
+                <td>House 2</td>
+                <td>4 bedrooms, 3 bathrooms</td>
+                <td>$2500/month</td>
+            </tr>
+            <tr>
+                <td>House 3</td>
+                <td>2 bedrooms, 1 bathroom</td>
+                <td>$1500/month</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>

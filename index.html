@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/afea27c44a.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <div class="logo">
+                <p style="color: whitesmoke; font-weight: bold; font-size: 25px;">House Rental </p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"> Home</a></li>
+                <li><a href="listing.html" class="active"> Places</a></li>
+                <li><a href="house.html" class="active">Online Packages</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li> <a href="Group.html" class="active">Group</a></li>
+                <li> <a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Stay</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label for="text">Location</label>
+                        <input type="text" placeholder="Where are you going?" id="text">
+                    </div>
+                    <div>
+                        <label for="text1">Check in</label>
+                        <input type="text" placeholder="Add Date" id="text1">
+                    </div>
+                    <div>
+                        <label for="text2">Check out</label>
+                        <input type="text" placeholder="Add Date" id="text2">
+                    </div>
+                    <div>
+                        <label for="text3">Guest</label>
+                        <input type="text" placeholder="Add Guest" id="text3">
+                    </div>
+                    <button type="submit"><img src="images/search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>

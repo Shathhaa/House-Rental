@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/afea27c44a.js"></script>
+    <style>
+        .Group {
+            background: #d3d2d2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <div class="logo">
+            <p style="color: black; font-weight: bold; font-size: 25px;">House Rental </p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"> Home</a></li>
+            <li><a href="listing.html" class="active"> Places</a></li>
+            <li><a href="house.html" class="active">Online Packages</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li> <a href="Group.html" class="active">Group</a></li>
+            <li> <a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+
+    </nav>
+    </div>
+
+
+    <section class="Group" id="Group">
+
+
+        <div class="Group" style="font-size: 30px; margin-top: 170px;">
+            <h4 style="text-align: center; margin-top: 50px ">Group </h4>
+            <ul id="members-list" style="text-align: center; ">
+                <li> ريناد الجهني</li>
+                <li> رزان الجهني</li>
+                <li> شذى ناصر</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const membersList = document.getElementById('members-list');
+
+            function Reorder_randomly() {
+                for (let i = membersList.children.length; i >= 0; i--) {
+                    membersList.appendChild(membersList.children[Math.random() * i | 0]);
+                }
+            }
+
+            Reorder_randomly();
+
+        });
+    </script>
+</body>
+
+</html>

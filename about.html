@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rental </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/afea27c44a.js"></script>
+    <style>
+        .about .row {
+            display: flex;
+            align-items: center;
+        }
+        
+        .video {
+            align-items: center;
+            padding: 30px;
+        }
+        
+        video {
+            width: 100%;
+            border-radius: 20px;
+            border: 5px dotted black;
+        }
+        
+        .about .row .content p {
+            font-size: 1.6rem;
+            color: #444;
+            padding: 1rem;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar-white">
+        <div class="logo">
+            <p style="color: black; font-weight: bold; font-size: 25px;">House Rental </p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"> Home</a></li>
+            <li><a href="listing.html" class="active"> Places</a></li>
+            <li><a href="house.html" class="active">Online Packages</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li> <a href="Group.html" class="active">Group</a></li>
+            <li> <a href="Contact.html" class="active">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+
+    </nav>
+    <section class="about" id="about" style="margin-top: 60px;">
+
+
+        <div class="video"><br>
+            <h1 class="heading" style="text-align: center;">About us</h1><br>
+            <video controls muted autoplay loop>
+                    <source src="v.mp4" type="video/mp4"> 
+                    </video>
+        </div>
+        <div class="row">
+
+
+            <div class="content">
+                <h2>About Our House Rental Service</h2>
+                <p>Welcome to our house rental service! We are dedicated to providing you with a seamless and enjoyable experience in finding your dream home. Whether you're looking for a cozy apartment, a spacious house, or a luxurious villa, we have a
+                    wide selection of rental properties to suit your needs.</p>
+                <p>Our team of experienced professionals is committed to assisting you throughout the entire rental process. From browsing listings to signing the lease agreement, we're here to guide you every step of the way. We understand that finding
+                    the perfect home is essential, and we strive to make it a hassle-free and rewarding journey.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        var navBar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
+    </script>
+</body>
+
+</html>
